@@ -91,8 +91,7 @@ class ProductResource extends Resource
                     ->sortable(),
                 Tables\Columns\TextColumn::make('price')
                     ->sortable(),
-                Tables\Columns\IconColumn::make('is_active')
-                    ->boolean(),
+              
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()

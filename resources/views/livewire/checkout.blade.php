@@ -119,7 +119,7 @@
                             <div class="text-gray-600">Nama : {{$shippingData['recipient_name']}}</div>
                             <div class="text-gray-600">Nomor : {{$shippingData['phone']}}</div>
                             <div class="text-gray-600">Alamat : {{$shippingData['shipping_address']}}</div>
-                            <div class="text-gray-600">Biaya Ongkir luar : Ongkir di tentukan setelah anda melakukan pemesanan</div>
+                            <div class="text-gray-600">Biaya Ongkir luar kota tegal : Ongkir di tentukan setelah anda melakukan pemesanan</div>
                         </div>
                     @endif
                 </div>

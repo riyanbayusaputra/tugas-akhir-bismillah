@@ -28,15 +28,13 @@ class RevenueChart extends ChartWidget
                     'data' => $data->pluck('total')->toArray(),
                     'fill' => false,
                     'borderColor' => '#4CAF50',
-                    'tension' => 0.1,
-                    'pointRadius' => 4,
-                    'pointHoverRadius' => 6,
-                ]
+                    'tension' => 0.3,          // agar garis lebih smooth
+                    'pointRadius' => 5,       // ukuran titik data
+                    'pointHoverRadius' => 7,  // ukuran titik saat hover
+                ],
             ],
             'labels' => $data->pluck('date')
-                ->map(function($date) {
-                    return Carbon::parse($date)->format('d M Y');
-                })
+                ->map(fn($date) => Carbon::parse($date)->format('d M Y'))
                 ->toArray(),
         ];
     }
@@ -45,5 +43,4 @@ class RevenueChart extends ChartWidget
     {
         return 'line';
     }
-
 }

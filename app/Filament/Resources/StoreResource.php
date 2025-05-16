@@ -55,7 +55,7 @@ class StoreResource extends Resource
                         Forms\Components\ColorPicker::make('primary_color'),
                         Forms\Components\ColorPicker::make('secondary_color'),
                         Forms\Components\Toggle::make('is_use_payment_gateway')
-                            ->label('Use Payment Gateway'),
+                            ->label('Aktifkan Payment Gateway'),
                     ])->columns(1),
                 ])->columns(2),
                 Forms\Components\Card::make([
@@ -78,7 +78,7 @@ class StoreResource extends Resource
                Tables\Columns\TextColumn::make('whatsapp')
                    ->searchable(),
                Tables\Columns\ToggleColumn::make('is_use_payment_gateway')
-                   ->label('aktifkan Payment Gateway'),
+                   ->label('Aktifkan Payment Gateway'),
                Tables\Columns\TextColumn::make('created_at')
                    ->dateTime()
                    ->sortable()
