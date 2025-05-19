@@ -87,7 +87,7 @@ class ShoppingCart extends Component
 
     // Cek apakah ada item dengan quantity < 5
     foreach ($this->carts as $cart) {
-        if ($cart->quantity < 5) {
+        if ($cart->quantity < 10) {
             $this->dispatch('showAlert', [
                 'message' => 'Minimal pemesanan adalah 10',
                 'type' => 'error'
